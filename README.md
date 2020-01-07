@@ -85,3 +85,19 @@ Proyecto de hola mundo como introduccion a un proyecto de angular.
 ### tslint.json
 
 > Establece reglas para la codificaccion y desarrollo de la aplicacion  
+
+### Directivas estructurales
+
+> Atributos especiales para manejar el **DOM** y sus elementos a fin de agregar funcionalidad y dinamismo a los elementos que se contengan en el **DOM**.
+> Al agregar una directiva estructural a un elemento, este en tiempo de compilacion pasa a envolver en una etiqueta el elemento al que se le agrego dicha directiva y todos y cada uno de lo elementos dentro de ella pasan a ser **hijos** y por tal razon estos heredaran comportamiento que se le aplique al padre.  
+> **DOM (Modelo de Objetos del Documento):** API para documentos HTML y XML, define la estructura logica de los documentos y el modo en que se accede y manipula el mismo, es decir que a tra vez de esta API se pueden manipular, navegar por su estructura y eliminar elementos pertenecientes al documento.
+
+#### Tipos de directivas
+
+> **De componente:** administra una region **HTML** de manera nativa a manera de template.  
+`*Nota: Pueden aplicarse solo una por elemento`  
+> **De atributo:** Este tipo de directivas se encargan de manejar la apariencia o comportamiento de un elemento.  
+`*Nota: Pueden aplicarse varias a un mismo elemento`  
+> ***ngIf:** Esta directiva analiza una exprecion booleana y hace que determinada porcion del **DOM** aparezca o desaparezca, ademas puede utilizar operandos logicos (&&, ||, etc).  
+`*nota: Esta opcion es mas eficiente que hacerlo mediante CSS debido a que permite que no se cargada por el compilador.`  
+>***ngFor:** permite generar interaciones de elementos HTML, funcionando a partir de arreglo de elementos.  
