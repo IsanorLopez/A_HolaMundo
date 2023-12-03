@@ -19,4 +19,12 @@ export class HeroComponent {
     return `${ this.name } - ${ this.edad }`;
   }
 
+  changeHero():void {
+    (this.name == "Spiderman" ) ? this.name = "IronMan" : this.name = "Spiderman";
+  }
+
+  changeAge():void {
+    (this.edad == 25 ) ? this.edad = 45 : this.edad = 25;
+  }
+
 }
