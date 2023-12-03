@@ -7,16 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-
   public title: string = 'HolaMundo';
-  public counter: number = 10;
-
-  modifyBy( numero: number ): void {
-    this.counter += numero;
-  }
-
-  reset(): void {
-    this.counter = 0;
-  }
-
 }
