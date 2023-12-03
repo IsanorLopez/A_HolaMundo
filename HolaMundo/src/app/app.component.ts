@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  title = 'HolaMundo';
+
+  public title: string = 'HolaMundo';
+  public counter: number = 10;
+
+  modifyBy( numero: number ): void {
+    this.counter += numero;
+  }
+
+  reset(): void {
+    this.counter = 0;
+  }
+
 }
