@@ -7,7 +7,16 @@ import { Component } from '@angular/core';
 })
 
 export class HeroComponent {
+
   public name: string = 'Ironman';
   public edad: number = 45;
+
+  get capitalizedName(): string {
+    return this.name.toUpperCase();
+  }
+
+  heroDescription(): string {
+    return `${ this.name } - ${ this.edad }`;
+  }
 
 }
