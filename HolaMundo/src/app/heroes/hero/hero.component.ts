@@ -20,11 +20,16 @@ export class HeroComponent {
   }
 
   changeHero():void {
-    (this.name == "Spiderman" ) ? this.name = "IronMan" : this.name = "Spiderman";
+    (this.name == 'Spiderman' ) ? this.name = 'IronMan' : this.name = 'Spiderman';
   }
 
   changeAge():void {
     (this.edad == 25 ) ? this.edad = 45 : this.edad = 25;
+  }
+
+  resetForm():void {
+    this.name = 'IronMan';
+    this.edad = 45;
   }
 
 }
