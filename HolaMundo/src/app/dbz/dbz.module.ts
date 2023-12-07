@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './pages/mainpage.component';
 import { ListComponent } from './components/list/list.component';
 import { CharacterComponent } from './components/character/character.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { CharacterComponent } from './components/character/character.component';
     CharacterComponent
   ],
   imports: [
+    FormsModule,
     CommonModule
   ],
   exports: [
