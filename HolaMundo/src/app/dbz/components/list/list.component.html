@@ -10,7 +10,7 @@
       <span class="text-primary">{{ i + 1 }}. </span>  <strong>{{ character.name }}</strong> -  {{ character.power }}
     </div>
 
-    <button class="btn btn-danger" (click)="onEraseCharacter(i)"> <strong>X</strong> </button>
+    <button class="btn btn-danger" (click)="onEraseCharacter(character.id!)"> <strong>X</strong> </button>
 
   </li>
 

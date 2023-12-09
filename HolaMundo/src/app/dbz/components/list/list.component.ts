@@ -11,9 +11,9 @@ export class ListComponent {
   @Input()
   public characterList: Character[] = [];
 
-  @Output() onDeleteCharacter: EventEmitter<number> = new EventEmitter();
+  @Output() onDeleteCharacter: EventEmitter<string> = new EventEmitter();
 
-  onEraseCharacter(index: number): void {
+  onEraseCharacter(index: string): void {
     this.onDeleteCharacter.emit(index);
   }
 
