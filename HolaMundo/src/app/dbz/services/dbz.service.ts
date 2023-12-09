@@ -14,12 +14,12 @@ export class DbzService {
     { id: uuid(), name: 'Vegeta', power: 7000}
   ];
 
-  onNewCharacter(character: Character):void {
+  addCharacter(character: Character):void {
     const newCharacter: Character = {id: uuid(), ...character};
     this.characters.push(newCharacter);
   }
 
-  onDeleteCharacter(id: string): void {
+  deleteCharacterById(id: string): void {
     this.characters = this.characters.filter( character => character.id !== id );
   }
 
